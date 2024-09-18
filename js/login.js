@@ -8,7 +8,7 @@ document.getElementById('button-login').addEventListener('click',function(event)
     
     //bad way validate
 
-    if(phoneNumber === '01763233845' && pinNumber === '1234'){
+    if(phoneNumber === '01234567891' && pinNumber === '1234'){
         console.log('your are logged in');
         window.location.href = '/home.html'
     }

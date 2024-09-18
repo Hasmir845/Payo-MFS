@@ -15,6 +15,9 @@ document.getElementById('button-add-money').addEventListener('click',function(ev
         
         document.getElementById('account-balance').innerText = newBalance;
         
+        document.getElementById('input-add-money').value = "";
+        document.getElementById('pin-number').value = "";
+        
     }
     else{
         alert("Wrong Pin")
