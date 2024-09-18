@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payoo MFS</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payo Home</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -21,27 +21,42 @@
         },
       };
     </script>
-  </head>
-  <body class="w-11/12 mx-auto my-3">
-    <main>
-      <section class="flex justify-center">
+</head>
+<body>
+    <section class="flex justify-center">
         <div class="mockup-phone">
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo phone-2">
               <div class="hero bg-base-200 min-h-screen">
                 <div class="hero-content flex-col">
+                    <!-- amount -->
+                    <div class="stat text-center h-10">
+                        <div class="stat-value text-primary">9.6K</div>
+                        <div class="stat-desc">Available Amount</div>
+                      </div>
+                    <!-- amount end -->
+                    <div class="divider mb-0"></div>
+
+                    <!-- button -->
+                    <div>
+                        <button class="btn">Add Money</button>
+                        <button class="btn">Cash Out</button>
+                    </div>
+                    <div class="divider mb-0 mt-0"></div>
+                    <!-- button end -->
+
                   <div
                     class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
                   >
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
-                          <span class="label-text">Mobile Number</span>
+                          <span class="label-text">Amount</span>
                         </label>
                         <input id="phone-number"
                           type="text"
-                          placeholder="Your Mobile Number"
+                          placeholder="Amount"
                           class="input input-bordered"
                           required />
                       </div>
@@ -56,14 +71,9 @@
                           autocomplete="off"
                           required
                         />
-                        <label class="label">
-                          <a href="#" class="label-text-alt link link-hover"
-                            >Forgot pin</a
-                          >
-                        </label>
                       </div>
                       <div class="form-control mt-6">
-                        <button id="button-login" class="btn btn-primary">Login</button>
+                        <button id="button-login" class="btn btn-primary">Add Money</button>
                       </div>
                     </form>
                   </div>
@@ -73,8 +83,5 @@
           </div>
         </div>
       </section>
-    </main>
-
-    <script src="./js/login.js"></script>
-  </body>
+</body>
 </html>

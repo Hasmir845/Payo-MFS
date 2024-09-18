@@ -1,9 +1,19 @@
 document.getElementById('button-login').addEventListener('click',function(event){
     event.preventDefault();
-    console.log('i am clicked');
 
-    //get phone number
+    //get phone number and pin
 
-    const phoneNumber = document.getElementById('phone-number');
-    console.log(phoneNumber.value);
+    const phoneNumber = document.getElementById('phone-number').value;
+    const pinNumber = document.getElementById('pin-number').value;
+    
+    //bad way validate
+
+    if(phoneNumber === '01763233845' && pinNumber === '1234'){
+        console.log('your are logged in');
+        window.location.href = '/home.html'
+    }
+    else{
+        alert('wrong phone or pin')
+    }
+
 })
